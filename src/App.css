@@ -27,7 +27,7 @@
   to { transform: rotate(360deg); }
 }
 
-.page-header-custom {
+.page-header-custom{
   margin-left: 20px;
   margin-top:80px;
   text-align: center;
@@ -44,8 +44,20 @@
 .jumbotron-color {
   background-color:#4E6731;
   color:#EAF5CB;
-  text-align: inherit
+  text-align: center;
 }
+
+.jumbotron-color h1 {
+  font-weight: bold ;
+ 
+}
+
+.jumbotron-color p {
+  font-weight: bold;
+  font-size: 19pt;
+  
+}
+
 
 .img-icon-weed{
   border: 0;
@@ -64,7 +76,7 @@
 
 .text-best-products {
   font-size: 3.4em;
-  color:rgba(124, 83, 7, 0.747);
+  color:#4E6731;
   font-weight:500
 }
 
@@ -79,6 +91,20 @@
 
 .row-best-products {
   text-align: center;
+}
+
+.text-carousel-title {
+  color: #4E6731
+}
+
+.text-carousel-descrip {
+  color: #4E6731
+}
+
+.products-panel {
+  height: 500px;
+  background-color:#4E6731;
+  display: block;
 }
 
 

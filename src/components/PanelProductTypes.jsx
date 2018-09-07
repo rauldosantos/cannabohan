@@ -2,19 +2,37 @@ import React, { Component , Fragment} from 'react';
 import logo from '../logo.svg';
 import '../App.css';
 import Header from './Header'
-import { Grid,Row,Col ,Jumbotron,Carousel,PageHeader, Thumbnail } from 'react-bootstrap';
+import { Row,Col , Thumbnail,Fade, Image } from 'react-bootstrap';
 import { bootstrapUtils } from 'react-bootstrap/lib/utils';
 
 class PanelProductTypes extends Component {
 
   render() {
-    bootstrapUtils.addStyle(PageHeader, 'custom');
+    
     return (
       <Fragment>
-        <Thumbnail src="/images/image1.jpg" alt="242x200" href="/products">
-        <h3>Sustratos y Fertilizantes</h3>
-        <p>Los mejores sustratos y fertilizantes de fabricación nacional</p>
-      </Thumbnail>
+          
+            <Col md={3} lg={3} xs={12} sm={12}>
+            <Fade in  timeout={8000}>
+              <div>
+                <Image src="/images/sustratos.jpg" responsive />
+              </div>
+            </Fade>
+              
+            </Col>
+            <Col md={3} lg={3} xs={12} sm={12}>           
+              <Thumbnail src="/images/fertilizantes.jpg" alt="320x240" href="/products/fertilizers">
+                <h3>Fertilizantes</h3>
+                <p>Fertilizantes de fabricación uruguaya</p>
+              </Thumbnail>
+            </Col>
+            <Col md={3} lg={3} xs={12} sm={12}> 
+              <Thumbnail src="/images/equipos.jpg" alt="320x240" href="/products/tech">
+                <h3>Maquinaria y Tecnología</h3>
+                <p>Equipos y maquinaria que te ayudarán con tu cultivo</p>
+              </Thumbnail>
+            </Col>
+          
        </Fragment>
     );
   }

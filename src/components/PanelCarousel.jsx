@@ -14,25 +14,16 @@ class PanelCarousel extends Component {
       <Fragment>
         <Carousel>
           <Carousel.Item>
-            <img width={1024} height={300}  src="/images/image1.png" />
-            <Carousel.Caption>
-              <h3>E-Grow</h3>
-              <p>Cultivos automatizados.</p>
-            </Carousel.Caption>
+            <img width={900} height={500}  src="/images/promo-egrow.png" />
+            
           </Carousel.Item>
           <Carousel.Item>
-            <img width={1024} height={300}  src="/images/image3.png" />
-            <Carousel.Caption>
-              <h3>Second slide label</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </Carousel.Caption>
+            <img width={900} height={500}  src="/images/promo-weeddesign.png" />
+            
           </Carousel.Item>
           <Carousel.Item>
-            <img width={1024} height={300} src="/images/image2.jpg" />
-            <Carousel.Caption>
-              <h3>Third slide label</h3>
-              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-            </Carousel.Caption>
+            <img width={900} height={500} src="/images/promo-biofertil.png" />
+            
           </Carousel.Item>
         </Carousel>
        </Fragment>

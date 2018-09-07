@@ -4,6 +4,7 @@ import '../App.css';
 import Header from './Header'
 import { Grid,Row,Col ,Jumbotron,Carousel,PageHeader, Image } from 'react-bootstrap';
 import { bootstrapUtils } from 'react-bootstrap/lib/utils';
+import { Parallax } from 'react-scroll-parallax';
 
 
 class PanelInfo extends Component {
@@ -12,19 +13,39 @@ class PanelInfo extends Component {
     bootstrapUtils.addStyle(PageHeader, 'custom');
     bootstrapUtils.addStyle(PageHeader, 'color');
     
+    const styles ={
+      backgroundImage:"url(/images/background-jumbotron.jpg)",
+      width: "100%",
+      height: "400px"
+    }
 
     
 
     return (
       <Fragment>
-       
+          <Parallax
+              className="custom-class"
+              offsetYMax={25}
+              offsetYMin={-25}
+              slowerScrollRate
+              tag="figure"
+          >
+          <Jumbotron style={styles} bsStyle="color">
+          <Parallax
+              className="custom-class"
+              offsetYMax={10}
+              offsetYMin={-20}
+              slowerScrollRate
+              tag="figure"
+          >
+            <h1>Bienvenido, cultivador </h1>
+            <p>
+              En esta página encontrarás productos uruguayos que te ayudarán a convertirte en un gran cultivador de cannabis criollo, un verdadero Cannabohan.
+            </p>
+          </Parallax>
+          </Jumbotron>
+          </Parallax>
         
-        <Jumbotron bsStyle="color">
-          <h1>Bienvenido, cultivador <Image className="img-icon-weed" width={80} height={80} src="images/weed.png"  /></h1>
-          <p>
-            En esta página encontrarás productos uruguayos que te ayudarán a convertirte en un gran cultivador de cannabis criollo, un verdadero Cannabohan.
-          </p>
-        </Jumbotron>
        </Fragment>
     );
   }
