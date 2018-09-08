@@ -26,7 +26,7 @@ class PanelInfo extends Component {
           <Parallax
               className="custom-class"
               offsetYMax={25}
-              offsetYMin={-25}
+              offsetYMin={-20}
               slowerScrollRate
               tag="figure"
           >
@@ -34,7 +34,7 @@ class PanelInfo extends Component {
           <Parallax
               className="custom-class"
               offsetYMax={10}
-              offsetYMin={-20}
+              offsetYMin={-10}
               slowerScrollRate
               tag="figure"
           >

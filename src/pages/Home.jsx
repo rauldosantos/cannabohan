@@ -8,6 +8,7 @@ import PanelInfo from '../components/PanelInfo'
 import PanelCarousel from '../components/PanelCarousel';
 import PanelProductTypes from '../components/PanelProductTypes';
 import { ParallaxBanner , Parallax} from 'react-scroll-parallax';
+import HeroBanner from '../components/HeroBanner';
 
 
 class Home extends Component {
@@ -29,7 +30,15 @@ class Home extends Component {
         </Row>
         <Row className="row-best-products">
           <Col >
-            <PanelInfo/>
+          <HeroBanner min={'-20%'}
+                max={'20%'}
+                image="images/background-jumbotron.jpg">
+                <h1>Bienvenido, cultivador </h1>
+                <p>
+                  En esta página encontrarás productos uruguayos que te ayudarán a convertirte en un gran cultivador de cannabis criollo, un verdadero Cannabohan.
+                </p>
+                </HeroBanner>
+        {/* <PanelInfo/> */}
           </Col>
         </Row>
         <Row className="row-best-products" >
