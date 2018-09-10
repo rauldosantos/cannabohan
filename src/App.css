@@ -23,61 +23,62 @@
 }
 
 @keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
-.page-header-custom{
+.page-header-custom {
   margin-left: 20px;
-  margin-top:80px;
+  margin-top: 80px;
   text-align: center;
 }
 
-.thumbnail-center{
+.thumbnail-center {
   margin-left: 20px;
 }
 
 .text-color-nav {
-  color:#4E6731
+  color: #4e6731;
 }
 
 .jumbotron-color {
-  background-color:#4E6731;
-  color:#EAF5CB;
+  background-color: #4e6731;
+  color: #eaf5cb;
   text-align: center;
 }
 
 .jumbotron-color h1 {
-  font-weight: bold ;
- 
+  font-weight: bold;
 }
 
 .jumbotron-color p {
   font-weight: bold;
   font-size: 19pt;
-  
 }
 
-
-.img-icon-weed{
+.img-icon-weed {
   border: 0;
   vertical-align: bottom;
 }
 
-.col-icon-weed{
+.col-icon-weed {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-  .container-text-jumbotron {
-    text-align: center;
-  }
+.container-text-jumbotron {
+  text-align: center;
+}
 
 .text-best-products {
   font-size: 3.4em;
-  color:#4E6731;
-  font-weight:500
+  color: #4e6731;
+  font-weight: 500;
 }
 
 .text-logo {
@@ -94,11 +95,11 @@
 }
 
 .text-carousel-title {
-  color: #4E6731
+  color: #4e6731;
 }
 
 .text-carousel-descrip {
-  color: #4E6731
+  color: #4e6731;
 }
 
 .products-panel {
@@ -109,7 +110,7 @@
 .hero-container {
   position: relative;
   width: 100%;
-  height: 45vh;
+  height: 62vh;
   overflow: hidden;
 }
 
@@ -122,11 +123,11 @@
 
 .hero-children {
   position: absolute;
-  top: 2.3vw;
+  top: 10vw;
   bottom: 0;
   left: 0;
   right: 0;
-  
+
   align-items: center;
   justify-content: center;
   vertical-align: middle;
@@ -134,20 +135,15 @@
 
 .hero-children h1 {
   font-weight: normal;
-  font-size: 6vw;
-  color:white;
+  font-size: 36pt;
+  color: white;
   vertical-align: middle;
-
 }
 
 .hero-children p {
   vertical-align: middle;
 
   font-weight: normal;
-  font-size: 2.5vw;
-  color:white;
+  font-size: 20pt;
+  color: white;
 }
-
-
-
-
