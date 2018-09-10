@@ -147,3 +147,9 @@
   font-size: 20pt;
   color: white;
 }
+
+.item-info-panel {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
