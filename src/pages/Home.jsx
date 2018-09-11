@@ -33,7 +33,7 @@ class Home extends Component {
                 responsive
                 width={760}
                 src="images/logo-cannabohan.svg"
-              />{' '}
+              />
               <br />
               <small>
                 <span className="text-color-nav text-logo">
