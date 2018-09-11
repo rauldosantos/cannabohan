@@ -3,7 +3,7 @@ import {
   Grid,
   Row,
   Col,
-  Thumbnail,
+  ResponsiveEmbed,
   PageHeader,
   Image,
   Well,
@@ -62,46 +62,61 @@ class Home extends Component {
             </HeroBanner>
           </Col>
         </Row>
-        <Row className="row-best-products">
+        <Row>
+          <div className="spacer"></div>
+        </Row>
+        <Row >
           <Col xs={4}>
             <Parallax
-              offsetYMin={20}
-              offsetYMax={-20}
+              offsetYMin={0}
+              offsetYMax={0}
               offsetXMax={0}
               offsetXMin={20}
               slowerScrollRate
-            >
+              className="item-parallax-info">
               <Image
+                width={300}
                 className="item-info-panel"
                 responsive
-                src="images/sustratos.png"
+                src="images/SUSTRAATOS.svg"
               />
+              <h1>SUSTRATOS</h1>
             </Parallax>
           </Col>
           <Col xs={4}>
-            <Parallax offsetYMin={-20} offsetYMax={20}>
+            <Parallax 
+            offsetYMin={0} 
+            offsetYMax={0} 
+            slowerScrollRate
+            className="item-parallax-info">
               <Image
+                width={300}
                 className="item-info-panel"
                 responsive
-                src="images/sustratos.png"
-              />
+                src="images/FERTILIZANTES.svg"
+              /><h1>FERTILIZANTES</h1>
             </Parallax>
           </Col>
           <Col xs={4}>
             <Parallax
-              offsetYMin={20}
-              offsetYMax={-20}
+              offsetYMin={0}
+              offsetYMax={0}
               offsetXMax={20}
               offsetXMin={-20}
               slowerScrollRate
-            >
+              className="item-parallax-info">
               <Image
+                width={300}
                 className="item-info-panel"
                 responsive
-                src="images/sustratos.png"
+                src="images/MAQUINARIA.svg"
               />
+              <h1>MAQUINARIA</h1>
             </Parallax>
           </Col>
+        </Row>
+        <Row>
+          <div className="spacer"></div>
         </Row>
         <Row>
           <Col md={1} lg={1} xs={1} smHidden />

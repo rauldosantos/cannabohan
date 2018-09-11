@@ -152,4 +152,15 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+  text-align: center; 
 }
+
+.item-parallax-info {
+  text-align: center;
+  color: #4e6731;
+}
+
+.spacer {
+  height: 3vh;
+}
+
