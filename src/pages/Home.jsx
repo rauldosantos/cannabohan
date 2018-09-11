@@ -32,7 +32,7 @@ class Home extends Component {
                 className="img-logo-header"
                 responsive
                 width={760}
-                src="images/logo-cannabohan.svg"
+                src="images/logo-cannabohan.png"
               />
               <br />
               <small>
@@ -79,7 +79,7 @@ class Home extends Component {
                 responsive
                 src="images/SUSTRAATOS.svg"
               />
-              <h1>SUSTRATOS</h1>
+              <h1 className="h1-subtitle">SUSTRATOS</h1>
             </Parallax>
           </Col>
           <Col xs={4}>
@@ -93,7 +93,7 @@ class Home extends Component {
                 className="item-info-panel"
                 responsive
                 src="images/FERTILIZANTES.svg"
-              /><h1>FERTILIZANTES</h1>
+              /><h1 className="h1-subtitle">FERTILIZANTES</h1>
             </Parallax>
           </Col>
           <Col xs={4}>
@@ -110,7 +110,7 @@ class Home extends Component {
                 responsive
                 src="images/MAQUINARIA.svg"
               />
-              <h1>MAQUINARIA</h1>
+              <h1 className="h1-subtitle">MAQUINARIA</h1>
             </Parallax>
           </Col>
         </Row>

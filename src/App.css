@@ -154,6 +154,9 @@
   margin-right: auto;
   text-align: center; 
 }
+.h1-subtitle {
+  font-size: 2.7vw;
+}
 
 .item-parallax-info {
   text-align: center;
