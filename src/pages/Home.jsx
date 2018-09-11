@@ -64,7 +64,13 @@ class Home extends Component {
         </Row>
         <Row className="row-best-products">
           <Col xs={4}>
-            <Parallax offsetYMin={30} offsetYMax={-30} slowerScrollRate>
+            <Parallax
+              offsetYMin={20}
+              offsetYMax={-20}
+              offsetXMax={0}
+              offsetXMin={20}
+              slowerScrollRate
+            >
               <Image
                 className="item-info-panel"
                 responsive
@@ -73,7 +79,7 @@ class Home extends Component {
             </Parallax>
           </Col>
           <Col xs={4}>
-            <Parallax offsetYMin={30} offsetYMax={-30} slowerScrollRate>
+            <Parallax offsetYMin={-20} offsetYMax={20}>
               <Image
                 className="item-info-panel"
                 responsive
@@ -82,7 +88,13 @@ class Home extends Component {
             </Parallax>
           </Col>
           <Col xs={4}>
-            <Parallax offsetYMin={30} offsetYMax={-30} slowerScrollRate>
+            <Parallax
+              offsetYMin={20}
+              offsetYMax={-20}
+              offsetXMax={20}
+              offsetXMin={-20}
+              slowerScrollRate
+            >
               <Image
                 className="item-info-panel"
                 responsive
