@@ -31,9 +31,8 @@ class Home extends Component {
               <Image
                 className="img-logo-header"
                 responsive
-                width={598}
-                height={104}
-                src="images/cannabohan-logo.png"
+                width={760}
+                src="images/logo-cannabohan.svg"
               />{' '}
               <br />
               <small>
@@ -75,7 +74,7 @@ class Home extends Component {
               slowerScrollRate
               className="item-parallax-info">
               <Image
-                width={300}
+                width={220}
                 className="item-info-panel"
                 responsive
                 src="images/SUSTRAATOS.svg"
@@ -90,7 +89,7 @@ class Home extends Component {
             slowerScrollRate
             className="item-parallax-info">
               <Image
-                width={300}
+                width={220}
                 className="item-info-panel"
                 responsive
                 src="images/FERTILIZANTES.svg"
@@ -106,7 +105,7 @@ class Home extends Component {
               slowerScrollRate
               className="item-parallax-info">
               <Image
-                width={300}
+                width={220}
                 className="item-info-panel"
                 responsive
                 src="images/MAQUINARIA.svg"
@@ -126,13 +125,7 @@ class Home extends Component {
           <Col md={1} lg={1} xs={1} smHidden />
         </Row>
         <Row>
-          <Well bsSize="large" />
-        </Row>
-        <Row>
-          <Col md={1} lg={1} xs={1} smHidden />
-          <PanelProductTypes />
-          <Col md={1} lg={1} xs={1} smHidden />
-          <Clearfix visibleSmBlock />
+          <div className="spacer"></div>
         </Row>
       </Grid>
     );

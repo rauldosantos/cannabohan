@@ -12,18 +12,15 @@ class PanelCarousel extends Component {
 
     return (
       <Fragment>
-        <Carousel>
-          <Carousel.Item>
-            <img width={900} height={500}  src="/images/promo-egrow.png" />
-            
+        <Carousel pauseOnHover>
+          <Carousel.Item animateIn animateOut>
+            <Image responsive width={1920} height={700}  src="/images/image1.png" />
           </Carousel.Item>
-          <Carousel.Item>
-            <img width={900} height={500}  src="/images/promo-weeddesign.png" />
-            
+          <Carousel.Item animateIn animateOut>
+            <Image responsive width={1920} height={700}  src="/images/image2.jpg" />
           </Carousel.Item>
-          <Carousel.Item>
-            <img width={900} height={500} src="/images/promo-biofertil.png" />
-            
+          <Carousel.Item animateIn animateOut>
+            <Image  responsive width={1920} height={700} src="/images/image3.png" />
           </Carousel.Item>
         </Carousel>
        </Fragment>

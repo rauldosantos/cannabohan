@@ -6,7 +6,7 @@ import '../App.css';
 import Header from '../components/Header'
 import PanelInfo from '../components/PanelInfo'
 
-class Products extends Component {
+class ProductsByBrand extends Component {
 
   render() {
     const grid = (
@@ -14,12 +14,11 @@ class Products extends Component {
         <Row className="show-grid">
           <Col >
             <Header/>
-            
            </Col>
         </Row>
         <Row className="show-grid">
         <PageHeader bsStyle="custom">
-              <span className="">Productos Cannabohanes<Image  width={80} height={80} src="images/jipi.png"  /></span>
+              <span className="">Productos Cannabohanes</span>
             </PageHeader>
         </Row>
       </Grid>
@@ -32,4 +31,4 @@ class Products extends Component {
   }
 }
 
-export default Products;
+export default ProductsByBrand;
