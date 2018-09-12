@@ -1,19 +1,24 @@
 import React from 'react';
-import { Navbar,Nav,NavItem,NavDropdown,MenuItem } from 'react-bootstrap';
+import { Navbar,Nav,NavItem,NavDropdown,MenuItem, Image } from 'react-bootstrap';
 
 class Header extends React.Component {
     render () {
         return (
-            <Navbar collapseOnSelect fixedTop>
+            <Navbar className="navbar-color" collapseOnSelect fixedTop>
                 <Navbar.Header>
                     <Navbar.Brand>
-                    <a href="/"><span className="text-color-nav">CANNABOHAN</span></a>
+                    <a href="/"><Image
+                className=""
+                responsive
+                width={150}
+                src="images/cannabohan-letras.png"
+              /></a>
                     </Navbar.Brand>
                     <Navbar.Toggle />
                 </Navbar.Header>
                 <Navbar.Collapse>
                     <Nav>
-                        <NavItem eventKey={1} href="/products/all">
+                        <NavItem className="nav-item" eventKey={1} href="/products/all">
                             Productos
                         </NavItem>
                         <NavDropdown eventKey={3} title="Marcas" id="basic-nav-dropdown">

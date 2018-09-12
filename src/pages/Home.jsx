@@ -18,6 +18,7 @@ import PanelCarousel from '../components/PanelCarousel';
 import PanelProductTypes from '../components/PanelProductTypes';
 import { ParallaxBanner, Parallax } from 'react-scroll-parallax';
 import HeroBanner from '../components/HeroBanner';
+import data from '../data/data.json';
 
 class Home extends Component {
   render() {
@@ -37,7 +38,7 @@ class Home extends Component {
               <br />
               <small>
                 <span className="text-color-nav text-logo">
-                  Productos uruguayos para cultivadores de cannabis
+                  Productos uruguayos para cultivadores de cannabis {" "}
                 </span>
               </small>
               <Image circle src="images/uruguay.png" width="30" height="30" />
@@ -50,7 +51,7 @@ class Home extends Component {
             <HeroBanner
               min={'-20%'}
               max={'20%'}
-              image="images/background-jumbotron.jpg"
+              image="images/background-jumbotron2.jpg"
             >
               <h1>Bienvenido, cultivador </h1>
               <p>
@@ -74,12 +75,13 @@ class Home extends Component {
               slowerScrollRate
               className="item-parallax-info">
               <Image
-                width={220}
+                width={200}
                 className="item-info-panel"
                 responsive
                 src="images/SUSTRAATOS.svg"
               />
               <h1 className="h1-subtitle">SUSTRATOS</h1>
+              <span className="item-info-panel-descrip">Lo que empieza bien... Aboná tus plantas desde la raíz</span>
             </Parallax>
           </Col>
           <Col xs={4}>
@@ -89,11 +91,13 @@ class Home extends Component {
             slowerScrollRate
             className="item-parallax-info">
               <Image
-                width={220}
+                width={200}
                 className="item-info-panel"
                 responsive
                 src="images/FERTILIZANTES.svg"
               /><h1 className="h1-subtitle">FERTILIZANTES</h1>
+              <span className="item-info-panel-descrip">Los mejores fertilizantes para hacer leudar tus cogollos</span>
+
             </Parallax>
           </Col>
           <Col xs={4}>
@@ -105,30 +109,129 @@ class Home extends Component {
               slowerScrollRate
               className="item-parallax-info">
               <Image
-                width={220}
+                width={200}
                 className="item-info-panel"
                 responsive
                 src="images/MAQUINARIA.svg"
               />
-              <h1 className="h1-subtitle">MAQUINARIA</h1>
+              <h1 className="h1-subtitle">TECNOLOGÍA</h1>
+              <span className="item-info-panel-descrip">Tecnología aplicada a la producción y tratamiento de la marihuana</span>
             </Parallax>
           </Col>
         </Row>
         <Row>
-          <div className="spacer"></div>
+          <div className="spacer5"></div>
         </Row>
         <Row>
-          <Col md={1} lg={1} xs={1} smHidden />
-          <Col md={10} lg={10} xs={12} sm={12}>
+          <Col >
             <PanelCarousel />
           </Col>
-          <Col md={1} lg={1} xs={1} smHidden />
         </Row>
         <Row>
-          <div className="spacer"></div>
+          <div className="spacer5"></div>
+        </Row>
+        <Row>
+        <Col md={4} lg={4}>
+        <Parallax
+              offsetYMin={30}
+              offsetYMax={-30}
+              offsetXMin={30}
+              slowerScrollRate
+              className="">
+              <Image
+                width={150}
+                className=""
+                responsive
+                src="images/logo-crececrece.svg"
+              />
+            </Parallax>
+            </Col>
+            <Col md={4} lg={4}>
+        <Parallax
+              offsetYMin={0}
+              offsetYMax={0}
+              offsetXMax={-30}
+              offsetXMin={30}
+              slowerScrollRate
+              className="">
+              <Image
+                width={250}
+                className=""
+                responsive
+                src="images/logo-weeddesign.svg"
+              />
+            </Parallax>
+            </Col>
+            <Col md={4} lg={4}>
+        <Parallax
+              offsetYMin={0}
+              offsetYMax={0}
+              offsetXMax={-30}
+              offsetXMin={30}
+              slowerScrollRate
+              className="">
+              <Image
+                width={250}
+                className=""
+                responsive
+                src="images/logo-egrow.svg"
+              />
+            </Parallax>
+            </Col>
+        </Row>
+        <Row>
+        <Col md={4} lg={4}>
+        <Parallax
+              offsetYMin={30}
+              offsetYMax={-30}
+              offsetXMax={30}
+              offsetXMin={-30}
+              slowerScrollRate
+              className="">
+              <Image
+                width={250}
+                className=""
+                responsive
+                src="images/logo-abonodemar.svg"
+              />
+            </Parallax>
+            </Col>
+            <Col md={4} lg={4}>
+        <Parallax
+              offsetYMin={30}
+              offsetYMax={-30}
+              offsetXMax={30}
+              offsetXMin={-30}
+              slowerScrollRate
+              className="">
+              <Image
+                width={250}
+                className=""
+                responsive
+                src="images/logo-sembrandovida.svg"
+              />
+            </Parallax>
+            </Col>
+            <Col md={4} lg={4}>
+        <Parallax
+              offsetYMin={0}
+              offsetYMax={0}
+              offsetXMax={30}
+              offsetXMin={-30}
+              slowerScrollRate
+              className="">
+              <Image
+                width={250}
+                className=""
+                responsive
+                src="images/logo-biofertil.svg"
+              />
+            </Parallax>
+            </Col>
         </Row>
       </Grid>
     );
+    console.log(data["brands"]);
     return <Fragment>{grid}</Fragment>;
   }
 }

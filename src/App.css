@@ -154,8 +154,14 @@
   margin-right: auto;
   text-align: center; 
 }
+.item-info-panel-descrip{
+  font-size: 1.3vw; 
+  display: inline-block;
+  width:15vw;
+  
+}
 .h1-subtitle {
-  font-size: 2.7vw;
+  font-size: 2vw;
 }
 
 .item-parallax-info {
@@ -167,3 +173,24 @@
   height: 3vh;
 }
 
+.spacer5 {
+  height: 5vh;
+}
+
+.navbar-color{
+  background-image: -webkit-linear-gradient(top,#eaf5cb 0,#92a649 100%);
+  background:rgba(0,0,0,0);
+  border-color: rgba(0,0,0,0)
+}
+
+.nav-item {
+  color:white
+}
+
+.navbar-default .navbar-nav>li>a {
+  color:unset;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+  color:rgb(34, 151, 34) ;
+}

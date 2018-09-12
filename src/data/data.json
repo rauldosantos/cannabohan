@@ -1,0 +1,70 @@
+{
+    "brands": [
+        {
+        "id": "biofertil",
+        "name": "BioFértil",
+        "description": "Fertilizantes orgánicos",
+        "email": "biofertil@gmail.com",
+        "phone": "098123456",
+        "products":[{
+                        "idProduct": "fertilizante",
+                        "nameProduct": "Fertilizante",
+                        "description": "Fertilizante hecho con productos orgánicos",
+                        "price": 200,
+                        "urlPhoto": "images/fertilizante.jpg"
+                    },
+                    {
+                        "idProduct": "pk1314",
+                        "nameProduct": "PK1314",
+                        "description": "Fertilizante hecho con potasio",
+                        "price": 200,
+                        "urlPhoto": "images/pk1314.jpg"
+                    }
+                    ]
+        },
+        {
+            "id": "crececrece",
+            "name": "CreceCrece",
+            "description": "Fertilizantes orgánicos",
+            "email": "CreceCrece@gmail.com",
+            "phone": "098123456",
+            "products":[{
+                            "idProduct": "fertilizante",
+                            "nameProduct": "Fertilizante",
+                            "description": "Fertilizante hecho con productos orgánicos",
+                            "price": 200,
+                            "urlPhoto": "images/fertilizante.jpg"
+                        },
+                        {
+                            "idProduct": "pk1314",
+                            "nameProduct": "PK1314",
+                            "description": "Fertilizante hecho con potasio",
+                            "price": 200,
+                            "urlPhoto": "images/pk1314.jpg"
+                        }
+                        ]
+            },
+            {
+                "id": "egrow",
+                "name": "E-Grow: cultivo inteligente",
+                "description": "Cultivos automatizados",
+                "email": "egrow@gmail.com",
+                "phone": "098123456",
+                "products":[{
+                                "idProduct": "prensa",
+                                "nameProduct": "Prensa",
+                                "description": "Prensa para extracción de resina",
+                                "price": 200,
+                                "urlPhoto": "images/fertilizante.jpg"
+                            },
+                            {
+                                "idProduct": "hidroponico",
+                                "nameProduct": "Cultivo Hidroponico",
+                                "description": "Cultivo hidroponico",
+                                "price": 200,
+                                "urlPhoto": "images/pk1314.jpg"
+                            }
+                            ]
+                }
+    ]
+  }
