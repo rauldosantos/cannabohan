@@ -11,24 +11,12 @@ class Header extends React.Component {
                 className=""
                 responsive
                 width={150}
-                src="images/cannabohan-letras.png"
+                src="/images/cannabohan-letras.png"
               /></a>
                     </Navbar.Brand>
                     <Navbar.Toggle />
                 </Navbar.Header>
                 <Navbar.Collapse>
-                    <Nav>
-                        <NavItem className="nav-item" eventKey={1} href="/products/all">
-                            Productos
-                        </NavItem>
-                        <NavDropdown eventKey={3} title="Marcas" id="basic-nav-dropdown">
-                            <MenuItem eventKey={3.1}>E-Grow</MenuItem>
-                            <MenuItem eventKey={3.2}>Crece Crece</MenuItem>
-                            <MenuItem eventKey={3.3}>Sustrato Del Paso</MenuItem>
-                            <MenuItem eventKey={3.3}>Bio Fértil</MenuItem>
-                            
-                        </NavDropdown>
-                    </Nav>
                     <Nav pullRight>
                     <NavItem eventKey={2} href="#">
                         Contacto

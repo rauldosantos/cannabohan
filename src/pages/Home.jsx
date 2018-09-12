@@ -52,7 +52,7 @@ class Home extends Component {
             <HeroBanner
               min={'-20%'}
               max={'20%'}
-              image="images/background-jumbotron2.jpg"
+              image="images/background-jumbotron3.png"
             >
               <h1>Bienvenido, cultivador </h1>
               <p>
@@ -72,7 +72,7 @@ class Home extends Component {
               offsetYMin={0}
               offsetYMax={0}
               offsetXMax={0}
-              offsetXMin={20}
+              offsetXMin={15}
               slowerScrollRate
               className="item-parallax-info">
               <Image
@@ -87,8 +87,7 @@ class Home extends Component {
           </Col>
           <Col xs={4}>
             <Parallax 
-            offsetYMin={0} 
-            offsetYMax={0} 
+             
             slowerScrollRate
             className="item-parallax-info">
               <Image
@@ -103,10 +102,8 @@ class Home extends Component {
           </Col>
           <Col xs={4}>
             <Parallax
-              offsetYMin={0}
-              offsetYMax={0}
               offsetXMax={20}
-              offsetXMin={-20}
+              offsetXMin={-15}
               slowerScrollRate
               className="item-parallax-info">
               <Image
@@ -145,7 +142,7 @@ class Home extends Component {
             <Col md={4} lg={4} sm={6} xs={12}>
             <Link to='/products/weeddesign'>
               <Image
-                width={250}
+                width={200}
                 className="brand-image"
                 responsive
                 src="images/logo-weeddesign.svg"
@@ -155,7 +152,7 @@ class Home extends Component {
             <Col md={4} lg={4} sm={6} xs={12} smHidden xsHidden>
             <Link to='/products/egrow'>
               <Image
-                width={250}
+                width={200}
                 className="brand-image"
                 responsive
                 src="images/logo-egrow.svg"
@@ -167,7 +164,7 @@ class Home extends Component {
         <Col md={4} lg={4} sm={6} xs={12} mdHidden lgHidden>
         <Link to='/products/egrow'>
           <Image
-            width={250}
+            width={200}
             className="brand-image"
             responsive
             src="images/logo-egrow.svg"
@@ -187,7 +184,7 @@ class Home extends Component {
             <Col md={4} lg={4} sm={6} xs={12} smHidden >
               <Link to='/products/sembrandovida'>
               <Image
-                width={250}
+                width={200}
                 className="brand-image"
                 responsive
                 src="images/logo-sembrandovida.svg"
@@ -197,7 +194,7 @@ class Home extends Component {
             <Col md={4} lg={4} sm={6} xs={12} smHidden>
             <Link to='/products/biofertil'>
               <Image
-                width={250}
+                width={200}
                 className="brand-image"
                 responsive
                 src="images/logo-biofertil.svg"
@@ -209,7 +206,7 @@ class Home extends Component {
         <Col md={4} lg={4} sm={6} xsHidden mdHidden lgHidden>
         <Link to='/products/sembrandovida'>
         <Image
-          width={250}
+          width={200}
           className="brand-image"
           responsive
           src="images/logo-sembrandovida.svg"
@@ -219,7 +216,7 @@ class Home extends Component {
       <Col md={4} lg={4} sm={6} xsHidden mdHidden lgHidden>
       <Link to='/products/biofertil'>
         <Image
-          width={250}
+          width={200}
           className="brand-image"
           responsive
           src="images/logo-biofertil.svg"
