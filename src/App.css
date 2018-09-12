@@ -194,3 +194,7 @@
 .navbar-default .navbar-nav>li>a:hover {
   color:rgb(34, 151, 34) ;
 }
+
+.brand-image {
+  margin:auto;
+}

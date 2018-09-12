@@ -9,6 +9,7 @@ import {
   Well,
   Clearfix
 } from 'react-bootstrap';
+import { Link } from 'react-router-dom'  ;
 
 import logo from '../logo.svg';
 import '../App.css';
@@ -131,103 +132,100 @@ class Home extends Component {
           <div className="spacer5"></div>
         </Row>
         <Row>
-        <Col md={4} lg={4}>
-        <Parallax
-              offsetYMin={30}
-              offsetYMax={-30}
-              offsetXMin={30}
-              slowerScrollRate
-              className="">
+        <Col md={4} lg={4} sm={6} xs={12}>
+        <Link to='/products/crececrece'>
               <Image
                 width={150}
-                className=""
+                className="brand-image"
                 responsive
                 src="images/logo-crececrece.svg"
               />
-            </Parallax>
+              </Link>
             </Col>
-            <Col md={4} lg={4}>
-        <Parallax
-              offsetYMin={0}
-              offsetYMax={0}
-              offsetXMax={-30}
-              offsetXMin={30}
-              slowerScrollRate
-              className="">
+            <Col md={4} lg={4} sm={6} xs={12}>
+            <Link to='/products/weeddesign'>
               <Image
                 width={250}
-                className=""
+                className="brand-image"
                 responsive
                 src="images/logo-weeddesign.svg"
               />
-            </Parallax>
+              </Link>
             </Col>
-            <Col md={4} lg={4}>
-        <Parallax
-              offsetYMin={0}
-              offsetYMax={0}
-              offsetXMax={-30}
-              offsetXMin={30}
-              slowerScrollRate
-              className="">
+            <Col md={4} lg={4} sm={6} xs={12} smHidden xsHidden>
+            <Link to='/products/egrow'>
               <Image
                 width={250}
-                className=""
+                className="brand-image"
                 responsive
                 src="images/logo-egrow.svg"
               />
-            </Parallax>
+            </Link>
             </Col>
         </Row>
         <Row>
-        <Col md={4} lg={4}>
-        <Parallax
-              offsetYMin={30}
-              offsetYMax={-30}
-              offsetXMax={30}
-              offsetXMin={-30}
-              slowerScrollRate
-              className="">
+        <Col md={4} lg={4} sm={6} xs={12} mdHidden lgHidden>
+        <Link to='/products/egrow'>
+          <Image
+            width={250}
+            className="brand-image"
+            responsive
+            src="images/logo-egrow.svg"
+          />
+        </Link>
+        </Col>
+        <Col md={4} lg={4} sm={6} xs={12}>
+        <Link to='/products/abonodemar'>
               <Image
-                width={250}
-                className=""
+                width={200}
+                className="brand-image"
                 responsive
                 src="images/logo-abonodemar.svg"
               />
-            </Parallax>
+              </Link>
             </Col>
-            <Col md={4} lg={4}>
-        <Parallax
-              offsetYMin={30}
-              offsetYMax={-30}
-              offsetXMax={30}
-              offsetXMin={-30}
-              slowerScrollRate
-              className="">
+            <Col md={4} lg={4} sm={6} xs={12} smHidden >
+              <Link to='/products/sembrandovida'>
               <Image
                 width={250}
-                className=""
+                className="brand-image"
                 responsive
                 src="images/logo-sembrandovida.svg"
               />
-            </Parallax>
+              </Link>
             </Col>
-            <Col md={4} lg={4}>
-        <Parallax
-              offsetYMin={0}
-              offsetYMax={0}
-              offsetXMax={30}
-              offsetXMin={-30}
-              slowerScrollRate
-              className="">
+            <Col md={4} lg={4} sm={6} xs={12} smHidden>
+            <Link to='/products/biofertil'>
               <Image
                 width={250}
-                className=""
+                className="brand-image"
                 responsive
                 src="images/logo-biofertil.svg"
               />
-            </Parallax>
+            </Link>
             </Col>
+        </Row>
+        <Row>
+        <Col md={4} lg={4} sm={6} xsHidden mdHidden lgHidden>
+        <Link to='/products/sembrandovida'>
+        <Image
+          width={250}
+          className="brand-image"
+          responsive
+          src="images/logo-sembrandovida.svg"
+        />
+        </Link>
+      </Col>
+      <Col md={4} lg={4} sm={6} xsHidden mdHidden lgHidden>
+      <Link to='/products/biofertil'>
+        <Image
+          width={250}
+          className="brand-image"
+          responsive
+          src="images/logo-biofertil.svg"
+        />
+      </Link>
+      </Col>
         </Row>
       </Grid>
     );
