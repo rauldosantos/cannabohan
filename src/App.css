@@ -35,6 +35,7 @@
   margin-left: 20px;
   margin-top: 80px;
   text-align: center;
+  border-bottom: unset;
 }
 
 .page-header-brands {
@@ -48,7 +49,7 @@
 }
 
 .text-color-nav {
-  color: #475e1d;
+  color: #7b8c30;
 }
 
 .jumbotron-color {
@@ -154,6 +155,10 @@
   color: white;
 }
 
+.item-info-col {
+  text-align: center;
+}
+
 .item-info-panel {
   display: block;
   margin-left: auto;
@@ -161,12 +166,14 @@
   text-align: center;
 }
 .item-info-panel-descrip {
-  font-size: 1.3vw;
+  font-size: 3vh;
   display: inline-block;
-  width: 15vw;
+  width: 30vh;
+  color: #7b8c30;
 }
 .h1-subtitle {
-  font-size: 2vw;
+  font-size: 4vh;
+  color: #7b8c30;
 }
 
 .item-parallax-info {
@@ -215,7 +222,7 @@
 }
 
 .row-info {
-  background-color: rgb(255, 255, 255);
+  background-color: unset;
 }
 
 .row-brands-scroll {

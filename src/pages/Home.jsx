@@ -49,11 +49,7 @@ class Home extends Component {
         </Row>
         <Row className="row-best-products">
           <Col>
-            <HeroBanner
-              min={'-20%'}
-              max={'20%'}
-              image="/images/background-jumbotron2.jpg"
-            >
+            <HeroBanner min={'-15%'} max={'15%'} image="/images/back-jumbo.jpg">
               <h1>Bienvenido, cultivador </h1>
               <p>
                 En esta página encontrarás productos uruguayos que te ayudarán a
@@ -67,7 +63,7 @@ class Home extends Component {
           <div className="spacer5" />
         </Row>
         <Row className="row-info">
-          <Col xs={4}>
+          <Col className="item-info-col" xsHidden smHidden lg={4} md={4}>
             <Parallax
               offsetXMax={0}
               offsetXMin={20}
@@ -78,7 +74,7 @@ class Home extends Component {
                 width={110}
                 className="item-info-panel"
                 responsive
-                src="images/SUSTRAATOS.svg"
+                src="images/logo-sustratos.svg"
               />
               <h1 className="h1-subtitle">SUSTRATOS</h1>
               <span className="item-info-panel-descrip">
@@ -86,13 +82,13 @@ class Home extends Component {
               </span>
             </Parallax>
           </Col>
-          <Col xs={4}>
+          <Col className="item-info-col" xsHidden smHidden lg={4} md={4}>
             <Parallax slowerScrollRate className="item-parallax-info">
               <Image
                 width={110}
                 className="item-info-panel"
                 responsive
-                src="/images/FERTILIZANTES.svg"
+                src="/images/logo-fertilizantes.svg"
               />
               <h1 className="h1-subtitle">FERTILIZANTES</h1>
               <span className="item-info-panel-descrip">
@@ -100,7 +96,7 @@ class Home extends Component {
               </span>
             </Parallax>
           </Col>
-          <Col xs={4}>
+          <Col className="item-info-col" xsHidden smHidden lg={4} md={4}>
             <Parallax
               offsetXMax={0}
               offsetXMin={-20}
@@ -111,7 +107,7 @@ class Home extends Component {
                 width={110}
                 className="item-info-panel"
                 responsive
-                src="/images/MAQUINARIA.svg"
+                src="/images/logo-maquinaria.svg"
               />
               <h1 className="h1-subtitle">TECNOLOGÍA</h1>
               <span className="item-info-panel-descrip">
@@ -119,6 +115,45 @@ class Home extends Component {
                 marihuana
               </span>
             </Parallax>
+          </Col>
+
+          <Col className="item-info-col" lgHidden mdHidden>
+            <Image
+              width={110}
+              className="item-info-panel"
+              responsive
+              src="images/logo-sustratos.svg"
+            />
+            <h1 className="h1-subtitle">SUSTRATOS</h1>
+            <span className="item-info-panel-descrip">
+              Lo que empieza bien... Aboná tus plantas desde la raíz
+            </span>
+          </Col>
+
+          <Col className="item-info-col" lgHidden mdHidden>
+            <Image
+              width={110}
+              className="item-info-panel"
+              responsive
+              src="/images/logo-fertilizantes.svg"
+            />
+            <h1 className="h1-subtitle">FERTILIZANTES</h1>
+            <span className="item-info-panel-descrip">
+              Los mejores fertilizantes para hacer leudar tus cogollos
+            </span>
+          </Col>
+
+          <Col className="item-info-col" lgHidden mdHidden>
+            <Image
+              width={110}
+              className="item-info-panel"
+              responsive
+              src="/images/logo-maquinaria.svg"
+            />
+            <h1 className="h1-subtitle">TECNOLOGÍA</h1>
+            <span className="item-info-panel-descrip">
+              Tecnología aplicada a la producción y tratamiento de la marihuana
+            </span>
           </Col>
         </Row>
 
