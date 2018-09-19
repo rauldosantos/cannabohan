@@ -104,7 +104,7 @@ class Home extends Component {
               className="item-parallax-info"
             >
               <Image
-                width={110}
+                width={125}
                 className="item-info-panel"
                 responsive
                 src="/images/logo-maquinaria.svg"
@@ -145,7 +145,7 @@ class Home extends Component {
 
           <Col className="item-info-col" lgHidden mdHidden>
             <Image
-              width={110}
+              width={125}
               className="item-info-panel"
               responsive
               src="/images/logo-maquinaria.svg"
