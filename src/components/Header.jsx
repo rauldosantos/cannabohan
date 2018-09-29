@@ -8,20 +8,22 @@ import {
   Image
 } from 'react-bootstrap';
 
+import { Link } from 'react-router-dom';
+
 class Header extends React.Component {
   render() {
     return (
       <Navbar className="navbar-color" collapseOnSelect fixedTop>
         <Navbar.Header>
           <Navbar.Brand>
-            <a href="/">
+            <Link to="/">
               <Image
                 className=""
                 responsive
                 width={150}
                 src="/images/logo-letras.png"
               />
-            </a>
+            </Link>
           </Navbar.Brand>
           <Navbar.Toggle />
         </Navbar.Header>

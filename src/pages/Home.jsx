@@ -18,11 +18,26 @@ import PanelBrands from '../components/PanelBrands';
 import { ParallaxBanner, Parallax } from 'react-scroll-parallax';
 import HeroBanner from '../components/HeroBanner';
 import Footer from '../components/Footer';
+import netlifyIdentity from 'netlify-identity-widget';
 
 import data from '../data/data.json';
 
 class Home extends Component {
+  constructor() {
+    super();
+
+    this.handleLogIn = this.handleLogIn.bind(this);
+  }
+
+  handleLogIn() {
+    // You can import the widget into any component and interact with it.
+    netlifyIdentity.open();
+  }
+
   render() {
+    const user = netlifyIdentity.currentUser();
+    console.log(user);
+
     const grid = (
       <Grid fluid>
         <Row className="show-grid">
@@ -172,6 +187,15 @@ class Home extends Component {
             <PanelBrands />
           </Col>
         </Row>
+        {/*<Row>
+          <Col>
+            <div>
+              <button onClick={this.handleLogIn} >Log in</button>
+            </div>
+            <div className="spacer8" />
+          </Col>
+          </Col>
+        </Row>*/}
         <Row>
           <Col>
             <div className="spacer8" />
@@ -184,7 +208,6 @@ class Home extends Component {
         </Row>
       </Grid>
     );
-    console.log(data['brands']);
     return <Fragment>{grid}</Fragment>;
   }
 }

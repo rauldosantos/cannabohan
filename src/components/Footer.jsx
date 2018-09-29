@@ -3,10 +3,15 @@ import { ParallaxBanner, Parallax } from 'react-scroll-parallax';
 
 class Footer extends React.Component {
   render() {
-    const { image, min, max, children } = this.props;
     return (
       <Fragment>
-        <footer className="footer">Pie de la pgina</footer>
+        <footer className="footer">
+          <span className="footer-text">
+            Todos los derechos reservados
+            <br />
+            Desarrollo y diseño - Rudos Labs - Copyright © 2018
+          </span>
+        </footer>
       </Fragment>
     );
   }

@@ -1,26 +1,25 @@
 import React, { Fragment } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { AnimatedRoute } from 'react-router-transition';
+import ScrollToTop from 'react-router-scroll-top';
 
 import Home from './pages/Home';
 import ProductsByBrand from './pages/ProductsByBrand';
 
 const Routes = () => (
   <Router>
-    <Fragment>
-      <Route exact path="/" component={Home} />
+    <ScrollToTop>
+      <Fragment>
+        <Route exact path="/" component={Home} />
 
-      <AnimatedRoute
-        path="/products/:idBrand"
-        component={ProductsByBrand}
-        atEnter={{ offset: -100 }}
-        atLeave={{ offset: -100 }}
-        atActive={{ offset: 0 }}
-        mapStyles={styles => ({
-          transform: `translateX(${styles.offset}%)`
-        })}
-      />
-    </Fragment>
+        <Route
+          exact
+          path="/products/:idBrand"
+          component={ProductsByBrand}
+          onUpdate={() => window.scrollTo(0, 0)}
+        />
+      </Fragment>
+    </ScrollToTop>
   </Router>
 );
 

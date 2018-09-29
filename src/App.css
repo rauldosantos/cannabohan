@@ -32,7 +32,8 @@
 }
 
 .page-header-custom {
-  margin-left: 20px;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 80px;
   text-align: center;
   border-bottom: unset;
@@ -40,8 +41,11 @@
 
 .page-header-brands {
   margin-left: 20px;
-  margin-top: 80px;
   text-align: left;
+}
+
+.title-brand-parent {
+  margin-top: 50px;
 }
 
 .thumbnail-center {
@@ -89,7 +93,7 @@
 }
 
 .text-logo {
-  font-size: 1.35em;
+  font-size: 1.2em;
 }
 
 .img-logo-header {
@@ -130,11 +134,9 @@
 
 .hero-children {
   position: absolute;
-  top: 4vh;
-  bottom: 0;
-  left: 0;
-  right: 0;
-
+  text-align: center;
+  bottom: 1vh;
+  top: 3vw;
   align-items: center;
   justify-content: center;
   vertical-align: middle;
@@ -142,7 +144,7 @@
 
 .hero-children h1 {
   font-weight: normal;
-  font-size: 32pt;
+  font-size: 30pt;
   color: white;
   vertical-align: middle;
 }
@@ -242,12 +244,11 @@
 .title-brand-col {
   padding-right: unset;
   padding-left: unset;
-  margin-top: 20px;
 }
 
 .title-brand-containter {
   background-color: #a8b958;
-  margin-top: 30px;
+
   width: 100%;
   vertical-align: middle;
   display: inline-block;
@@ -270,6 +271,15 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#627d4d', endColorstr='#1f3b08',GradientType=1 );
 }
 
+.brands-border-top {
+  height: 1vh;
+  background: #627d4d;
+  background: -moz-linear-gradient(-45deg, #627d4d 34%, #1f3b08 56%);
+  background: -webkit-linear-gradient(-45deg, #627d4d 34%, #1f3b08 56%);
+  background: linear-gradient(135deg, #627d4d 34%, #1f3b08 56%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#627d4d', endColorstr='#1f3b08',GradientType=1 );
+}
+
 .brand-padding {
   padding-left: 0px;
   padding-right: 0px;
@@ -281,8 +291,14 @@
 
 .footer {
   text-align: center;
+  vertical-align: middle;
   color: #222;
   background-color: #4e6731;
+  height: 40px;
+}
+.footer-text {
+  color: #f7f7f7;
+  font-size: 13px;
 }
 
 div.container-fluid {
@@ -345,4 +361,43 @@ div.col-xs-8,
 div.col-xs-9 {
   padding-left: 0;
   padding-right: 0;
+}
+
+.card {
+  box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.4);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  color: #1f3b08;
+  margin-top: 20px;
+  background-color: #f3ec8c;
+}
+.card p {
+  font-size: 14px;
+}
+.card h1 {
+  color: #1f3b08;
+  font-size: 30px;
+}
+
+.price {
+  color: rgb(131, 116, 40);
+  font-size: 25px;
+}
+
+.card-button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #475e1d;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card-button:hover {
+  opacity: 0.7;
 }
