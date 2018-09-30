@@ -41,6 +41,7 @@ class ProductsByBrand extends Component {
                   price={value.price}
                   description={value.description}
                   shortDescription={value.shortDescription}
+                  brand={brand}
                 />
               </Col>
             );
