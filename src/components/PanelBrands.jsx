@@ -16,117 +16,120 @@ class PanelBrands extends Component {
     const imageWidth = 300;
     return (
       <Fragment>
-        <Parallax
-          offsetYMax={-10}
-          offsetYMin={10}
-          slowerScrollRate
-          className="brand-padding"
-        >
-          <div className="brands-row ">
-            <Row>
-              <Col>
-                <div className="brands-border" />
-              </Col>
-            </Row>
-            <Row>
-              <Col>
-                <div className="spacer1" />
-              </Col>
-            </Row>
-            <Row>
-              <Col className="brand-padding" md={md} lg={lg} sm={sm} xs={xs}>
-                <Link to="/products/crececrece">
-                  <Image
-                    width={imageWidth}
-                    className="brand-image"
-                    responsive
-                    src="images/logo-crececrece.svg"
-                  />
-                </Link>
-              </Col>
-              <Col className="brand-padding" md={md} lg={lg} sm={sm} xs={xs}>
-                <Link to="/products/weeddesign">
-                  <Image
-                    width={imageWidth}
-                    className="brand-image"
-                    responsive
-                    src="/images/logo-weeddesign.svg"
-                  />
-                </Link>
-              </Col>
-              <Col className="brand-padding" md={md} lg={lg} sm={sm} xs={xs}>
-                <Link to="/products/egrow">
-                  <Image
-                    width={imageWidth}
-                    className="brand-image"
-                    responsive
-                    src="/images/logo-egrow.svg"
-                  />
-                </Link>
-              </Col>
-              <Col className="brand-padding" md={md} lg={lg} sm={sm} xs={xs}>
-                <Link to="/products/abonodemar">
-                  <Image
-                    width={imageWidth}
-                    className="brand-image"
-                    responsive
-                    src="/images/logo-abonodemar.svg"
-                  />
-                </Link>
-              </Col>
-              <Col className="brand-padding" md={md} lg={lg} sm={sm} xs={xs}>
-                <Link to="/products/sembrandovida">
-                  <Image
-                    width={imageWidth}
-                    className="brand-image"
-                    responsive
-                    src="/images/logo-sembrandovida.svg"
-                  />
-                </Link>
-              </Col>
-              <Col className="brand-padding" md={md} lg={lg} sm={sm} xs={xs}>
-                <Link to="/products/biofertil">
-                  <Image
-                    width={imageWidth}
-                    className="brand-image"
-                    responsive
-                    src="/images/logo-biofertil.svg"
-                  />
-                </Link>
-              </Col>
-              <Col className="brand-padding" md={md} lg={lg} sm={sm} xs={xs}>
-                <Link to="/products/biofertil">
-                  <Image
-                    width={imageWidth}
-                    className="brand-image"
-                    responsive
-                    src="/images/logo-merlin.svg"
-                  />
-                </Link>
-              </Col>
-              <Col className="brand-padding" md={md} lg={lg} sm={sm} xs={xs}>
-                <Link to="/products/biofertil">
-                  <Image
-                    width={imageWidth}
-                    className="brand-image"
-                    responsive
-                    src="/images/logo-suelo-vivo.svg"
-                  />
-                </Link>
-              </Col>
-            </Row>
-            <Row>
-              <Col>
-                <div className="spacer1" />
-              </Col>
-            </Row>
-            <Row>
-              <Col>
-                <div className="brands-border" />
-              </Col>
-            </Row>
-          </div>
-        </Parallax>
+        <div className="brands-row ">
+          <Row>
+            <Col>
+              <div className="brands-border" />
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <div className="spacer1" />
+            </Col>
+          </Row>
+          <Row>
+            <Col className="brand-padding" md={md} lg={lg} sm={sm} xs={xs}>
+              <Link to="/products/crececrece">
+                <Image
+                  width={imageWidth}
+                  className="brand-image"
+                  responsive
+                  src="images/logo-crececrece.svg"
+                />
+              </Link>
+            </Col>
+            <Col className="brand-padding" md={md} lg={lg} sm={sm} xs={xs}>
+              <Link to="/products/weeddesign">
+                <Image
+                  width={imageWidth}
+                  className="brand-image"
+                  responsive
+                  src="/images/logo-weeddesign.svg"
+                />
+              </Link>
+            </Col>
+            <Col className="brand-padding" md={md} lg={lg} sm={sm} xs={xs}>
+              <Link to="/products/egrow">
+                <Image
+                  width={imageWidth}
+                  className="brand-image"
+                  responsive
+                  src="/images/logo-egrow.svg"
+                />
+              </Link>
+            </Col>
+            <Col className="brand-padding" md={md} lg={lg} sm={sm} xs={xs}>
+              <Link to="/products/abonodemar">
+                <Image
+                  width={imageWidth}
+                  className="brand-image"
+                  responsive
+                  src="/images/logo-abonodemar.svg"
+                />
+              </Link>
+            </Col>
+            <Col className="brand-padding" md={md} lg={lg} sm={sm} xs={xs}>
+              <Link to="/products/sembrandovida">
+                <Image
+                  width={imageWidth}
+                  className="brand-image"
+                  responsive
+                  src="/images/logo-sembrandovida.svg"
+                />
+              </Link>
+            </Col>
+            <Col className="brand-padding" md={md} lg={lg} sm={sm} xs={xs}>
+              <Link to="/products/biofertil">
+                <Image
+                  width={imageWidth}
+                  className="brand-image"
+                  responsive
+                  src="/images/logo-biofertil.svg"
+                />
+              </Link>
+            </Col>
+            <Col className="brand-padding" md={md} lg={lg} sm={sm} xs={xs}>
+              <Link to="/products/merlin">
+                <Image
+                  width={imageWidth}
+                  className="brand-image"
+                  responsive
+                  src="/images/logo-merlin.svg"
+                />
+              </Link>
+            </Col>
+            <Col className="brand-padding" md={md} lg={lg} sm={sm} xs={xs}>
+              <Link to="/products/suelovivo">
+                <Image
+                  width={imageWidth}
+                  className="brand-image"
+                  responsive
+                  src="/images/logo-suelovivo.svg"
+                />
+              </Link>
+            </Col>
+            <Col className="brand-padding" md={md} lg={lg} sm={sm} xs={xs}>
+              <Link to="/products/khyma">
+                <Image
+                  width={imageWidth}
+                  className="brand-image"
+                  responsive
+                  src="/images/logo-khyma.svg"
+                />
+              </Link>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <div className="spacer1" />
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <div className="brands-border" />
+            </Col>
+          </Row>
+        </div>
       </Fragment>
     );
   }

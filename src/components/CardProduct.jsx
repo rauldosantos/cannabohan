@@ -19,7 +19,7 @@ class CardProduct extends React.Component {
       <Fragment>
         <Link to={urlProduct}>
           <div className="card">
-            <Image width={150} src={imageURL} />
+            <Image width={100} src={imageURL} />
             <h1>{title}</h1>
             <span className="price">${price}</span>
             <p>{shortDescription}</p>

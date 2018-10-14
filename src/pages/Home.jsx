@@ -198,7 +198,7 @@ class Home extends Component {
         </Row>*/}
         <Row>
           <Col>
-            <div className="spacer8" />
+            <div className="spacer5" />
           </Col>
         </Row>
         <Row>

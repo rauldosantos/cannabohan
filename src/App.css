@@ -419,7 +419,7 @@ div.col-xs-9 {
 
 .product-detail-price {
   text-align: center;
-  color: #475e1d;
+  color: rgb(131, 116, 40);
   font-weight: bold;
   font-size: 28px;
 }
@@ -430,10 +430,21 @@ div.col-xs-9 {
   padding: 10px;
 }
 
+.product-detail-delivery {
+  color: #9c753a;
+  text-align: center;
+  font-size: 18px;
+}
+
 .contact-number {
   font-weight: 700;
   color: #475e1d;
   font-size: 18px;
+}
+
+.social-share-container {
+  margin: auto;
+  text-align: center;
 }
 
 .product-info-container h1 {

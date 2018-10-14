@@ -36,13 +36,16 @@ class ProductDetail extends Component {
           <Col lg={3}>
             <div className="product-detail-image-container">
               <Image
-                src="/images/logo-fertilizantes.svg"
+                src={product.urlPhoto}
                 className="product-detail-image"
                 width={200}
               />
             </div>
             <div className="product-detail-price">
               <span>$ {product.price}</span>
+            </div>
+            <div className="product-detail-delivery">
+              <span>Tiempo de envío: 24 horas +/-</span>
             </div>
           </Col>
           <Col lg={5}>

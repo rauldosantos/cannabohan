@@ -37,7 +37,7 @@ class ProductsByBrand extends Component {
               <Col md={4} xs={12}>
                 <CardProduct
                   idProduct={value.idProduct}
-                  imageURL="/images/logo-fertilizantes.svg"
+                  imageURL={value.urlPhoto}
                   title={value.nameProduct}
                   price={value.price}
                   description={value.description}
