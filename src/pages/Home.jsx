@@ -67,7 +67,7 @@ class Home extends Component {
             <HeroBanner min={'-15%'} max={'15%'} image="/images/back-jumbo.jpg">
               <h1>Bienvenido, cultivador </h1>
               <p>
-                En esta página encontrarás productos uruguayos que te ayudarán a
+                En esta página encontrarás productos que te ayudarán a
                 convertirte en un gran cultivador de cannabis criollo, un
                 verdadero Cannabohan.
               </p>

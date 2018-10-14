@@ -186,32 +186,32 @@
       "phone": "098123456",
       "products": [
         {
-          "idProduct": "producto1",
-          "nameProduct": "Producto 1",
+          "idProduct": "harinapluma",
+          "nameProduct": "Harina de pluma",
           "description": "Descirpción del producto",
           "price": 200,
-          "urlPhoto": "/images/products/suelovivo/producto1.png"
+          "urlPhoto": "/images/products/suelovivo/harinapluma.png"
         },
         {
-          "idProduct": "producto2",
-          "nameProduct": "Producto 2",
+          "idProduct": "carbonatodolomitico",
+          "nameProduct": "Carbonato dolomítico",
           "description": "Descirpción del producto",
           "price": 200,
-          "urlPhoto": "/images/products/suelovivo/producto2.png"
+          "urlPhoto": "/images/products/suelovivo/carbonatodolomitico.png"
         },
         {
-          "idProduct": "producto3",
-          "nameProduct": "Producto 3",
+          "idProduct": "harinapescado",
+          "nameProduct": "Harina de pescado",
           "description": "Descirpción del producto",
           "price": 200,
-          "urlPhoto": "/images/products/suelovivo/producto3.png"
+          "urlPhoto": "/images/products/suelovivo/harinapescado.png"
         },
         {
-          "idProduct": "producto4",
-          "nameProduct": "Producto 4",
+          "idProduct": "carbonatocalcio",
+          "nameProduct": "Carbonato de calcio",
           "description": "Descirpción del producto",
           "price": 200,
-          "urlPhoto": "/images/products/suelovivo/producto4.png"
+          "urlPhoto": "/images/products/suelovivo/carbonatocalcio.png"
         }
       ]
     }

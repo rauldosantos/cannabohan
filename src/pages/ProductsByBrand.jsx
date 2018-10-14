@@ -33,6 +33,7 @@ class ProductsByBrand extends Component {
         </Row>
         <Row>
           {products.map((value, index) => {
+            console.log(value.urlPhoto);
             return (
               <Col md={4} xs={12}>
                 <CardProduct
