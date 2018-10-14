@@ -426,7 +426,7 @@ div.col-xs-9 {
 
 .product-info-container {
   color: #1f3b08;
-  height: 320px;
+  height: auto;
   padding: 10px;
 }
 

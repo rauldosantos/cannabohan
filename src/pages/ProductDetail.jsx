@@ -6,6 +6,7 @@ import Header from '../components/Header';
 import data from '../data/data.json';
 import BrandTitle from '../components/BrandTitle';
 import Footer from '../components/Footer';
+import * as Constants from '../utils/Constants.js';
 
 class ProductDetail extends Component {
   render() {
@@ -50,8 +51,8 @@ class ProductDetail extends Component {
               <p>{product.description}</p>
             </div>
             <span className="contact-number">
-              <Image src="/images/logo-wassap.svg" width={40} /> 092111826
-              Pedílo por whatsapp!
+              <Image src="/images/logo-wassap.svg" width={40} />{' '}
+              {Constants.CONTACT_NUMBER} Pedílo por whatsapp!
             </span>
           </Col>
         </Row>

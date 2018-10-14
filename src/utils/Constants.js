@@ -1,0 +1,1 @@
+export const CONTACT_NUMBER = '098977540';
