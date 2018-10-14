@@ -9,7 +9,7 @@ class Footer extends React.Component {
           <span className="footer-text">
             Todos los derechos reservados
             <br />
-            Desarrollo y diseño - Rudos Labs - Copyright © 2018
+            Copyright © 2018
           </span>
         </footer>
       </Fragment>

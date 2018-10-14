@@ -283,6 +283,8 @@
 .brand-padding {
   padding-left: 0px;
   padding-right: 0px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .brands-row {
@@ -365,13 +367,12 @@ div.col-xs-9 {
 
 .card {
   box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.4);
-  max-width: 300px;
+  max-width: 290px;
   margin: auto;
   text-align: center;
   font-family: arial;
   color: #1f3b08;
   margin-top: 20px;
-  background-color: #f3ec8c;
 }
 .card p {
   font-size: 14px;
@@ -393,11 +394,48 @@ div.col-xs-9 {
   color: white;
   background-color: #475e1d;
   text-align: center;
-  cursor: pointer;
+
   width: 100%;
   font-size: 18px;
 }
 
-.card-button:hover {
-  opacity: 0.7;
+.product-detail-image-container {
+  height: 340px;
+  position: relative;
+}
+
+.product-detail-image {
+  max-height: 100%;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.product-detail-price {
+  text-align: center;
+  color: #475e1d;
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.product-info-container {
+  color: #1f3b08;
+  height: 320px;
+  padding: 10px;
+}
+
+.contact-number {
+  font-weight: 700;
+  color: #475e1d;
+  font-size: 18px;
+}
+
+.product-info-container h1 {
+  color: #614925;
 }

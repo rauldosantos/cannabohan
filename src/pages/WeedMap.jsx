@@ -7,15 +7,17 @@ import data from '../data/data.json';
 import BrandTitle from '../components/BrandTitle';
 import CardProduct from '../components/CardProduct';
 import Footer from '../components/Footer';
+import { withGoogleMap, GoogleMap, Marker } from 'react-google-maps';
 
-class ProductsByBrand extends Component {
+const MapComponent = withGoogleMap(props => (
+  <GoogleMap
+    defaultCenter={{ lat: 40.756795, lng: -73.954298 }}
+    defaultZoom={13}
+  />
+));
+
+class WeedMap extends Component {
   render() {
-    const { match } = this.props;
-    const { idBrand } = match.params;
-    const { brands } = data;
-    let brand = brands.find(value => value.id === idBrand);
-    const { products } = brand;
-
     const grid = (
       <Grid fluid>
         <Row className="showGrid">
@@ -25,28 +27,24 @@ class ProductsByBrand extends Component {
         </Row>
         <Row>
           <Col className="title-brand-col" md={12} lg={12} xs={12} sm={12}>
-            <BrandTitle idBrand={idBrand} />
+            <BrandTitle idBrand="weeddesign" />
           </Col>
         </Row>
         <Row>
           <div className="spacer8" />
         </Row>
         <Row>
-          {products.map((value, index) => {
-            return (
-              <Col md={4} xs={12}>
-                <CardProduct
-                  idProduct={value.idProduct}
-                  imageURL="/images/logo-fertilizantes.svg"
-                  title={value.nameProduct}
-                  price={value.price}
-                  description={value.description}
-                  shortDescription={value.shortDescription}
-                  brand={brand}
-                />
-              </Col>
-            );
-          })}
+          <Col>
+            <div>
+              <MapComponent
+                isMarkerShown
+                containerElement={
+                  <div style={{ height: `500px`, width: '500px' }} />
+                }
+                mapElement={<div style={{ height: `100%` }} />}
+              />
+            </div>
+          </Col>
         </Row>
         <Row>
           <Col>
@@ -64,4 +62,4 @@ class ProductsByBrand extends Component {
   }
 }
 
-export default ProductsByBrand;
+export default WeedMap;

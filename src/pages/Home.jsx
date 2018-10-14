@@ -54,7 +54,7 @@ class Home extends Component {
               <br />
               <small>
                 <span className="text-color-nav text-logo">
-                  Productos uruguayos para cultivadores de cannabis{' '}
+                  Productos para cultivadores de cannabis{' '}
                 </span>
               </small>
               <Image circle src="/images/uruguay.png" width="30" height="30" />

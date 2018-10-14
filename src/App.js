@@ -5,6 +5,8 @@ import ScrollToTop from 'react-router-scroll-top';
 
 import Home from './pages/Home';
 import ProductsByBrand from './pages/ProductsByBrand';
+import ProductDetail from './pages/ProductDetail';
+import WeedMap from './pages/WeedMap';
 
 const Routes = () => (
   <Router>
@@ -12,12 +14,15 @@ const Routes = () => (
       <Fragment>
         <Route exact path="/" component={Home} />
 
+        <Route exact path="/products/:idBrand" component={ProductsByBrand} />
+
         <Route
           exact
-          path="/products/:idBrand"
-          component={ProductsByBrand}
-          onUpdate={() => window.scrollTo(0, 0)}
+          path="/products/:idBrand/:idProduct"
+          component={ProductDetail}
         />
+
+        {/*<Route exact path="/weedmap" component={WeedMap} />*/}
       </Fragment>
     </ScrollToTop>
   </Router>

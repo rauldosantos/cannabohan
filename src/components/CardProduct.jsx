@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 class CardProduct extends React.Component {
   render() {
     const {
+      idProduct,
       imageURL,
       title,
       price,
@@ -13,24 +14,20 @@ class CardProduct extends React.Component {
       brand
     } = this.props;
 
-    let urlWhatsapp =
-      'https://api.whatsapp.com/send?phone=+59892111826&text=Me%20gustaría%20comprar%20el%20producto%20' +
-      title +
-      '%20de%20' +
-      brand.name;
+    let urlProduct = '/products/' + brand.id + '/' + idProduct;
     return (
       <Fragment>
-        <div className="card">
-          <Image width={150} src={imageURL} />
-          <h1>{title}</h1>
-          <span className="price">${price}</span>
-          <p>{shortDescription}</p>
-          <a href={urlWhatsapp}>
+        <Link to={urlProduct}>
+          <div className="card">
+            <Image width={150} src={imageURL} />
+            <h1>{title}</h1>
+            <span className="price">${price}</span>
+            <p>{shortDescription}</p>
             <div className="card-button">
-              Pedílo ahora <Image width={40} src="/images/logo-wassap.svg" />
+              <Image width={150} src="/images/logo-cannabohan.png" />
             </div>
-          </a>
-        </div>
+          </div>
+        </Link>
       </Fragment>
     );
   }

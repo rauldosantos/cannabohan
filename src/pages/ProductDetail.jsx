@@ -5,17 +5,17 @@ import '../App.css';
 import Header from '../components/Header';
 import data from '../data/data.json';
 import BrandTitle from '../components/BrandTitle';
-import CardProduct from '../components/CardProduct';
 import Footer from '../components/Footer';
 
-class ProductsByBrand extends Component {
+class ProductDetail extends Component {
   render() {
     const { match } = this.props;
-    const { idBrand } = match.params;
+    const { idBrand, idProduct } = match.params;
     const { brands } = data;
     let brand = brands.find(value => value.id === idBrand);
     const { products } = brand;
-
+    let product = products.find(value => value.idProduct === idProduct);
+    console.log(product);
     const grid = (
       <Grid fluid>
         <Row className="showGrid">
@@ -32,21 +32,28 @@ class ProductsByBrand extends Component {
           <div className="spacer8" />
         </Row>
         <Row>
-          {products.map((value, index) => {
-            return (
-              <Col md={4} xs={12}>
-                <CardProduct
-                  idProduct={value.idProduct}
-                  imageURL="/images/logo-fertilizantes.svg"
-                  title={value.nameProduct}
-                  price={value.price}
-                  description={value.description}
-                  shortDescription={value.shortDescription}
-                  brand={brand}
-                />
-              </Col>
-            );
-          })}
+          <Col lg={3}>
+            <div className="product-detail-image-container">
+              <Image
+                src="/images/logo-fertilizantes.svg"
+                className="product-detail-image"
+                width={200}
+              />
+            </div>
+            <div className="product-detail-price">
+              <span>$ {product.price}</span>
+            </div>
+          </Col>
+          <Col lg={5}>
+            <div className="product-info-container">
+              <h1>{product.nameProduct}</h1>
+              <p>{product.description}</p>
+            </div>
+            <span className="contact-number">
+              <Image src="/images/logo-wassap.svg" width={40} /> 092111826
+              Pedílo por whatsapp!
+            </span>
+          </Col>
         </Row>
         <Row>
           <Col>
@@ -64,4 +71,4 @@ class ProductsByBrand extends Component {
   }
 }
 
-export default ProductsByBrand;
+export default ProductDetail;

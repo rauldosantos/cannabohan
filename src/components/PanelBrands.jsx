@@ -9,6 +9,11 @@ import { ParallaxBanner, Parallax } from 'react-scroll-parallax';
 
 class PanelBrands extends Component {
   render() {
+    const md = 4;
+    const lg = 4;
+    const sm = 6;
+    const xs = 12;
+    const imageWidth = 300;
     return (
       <Fragment>
         <Parallax
@@ -29,63 +34,83 @@ class PanelBrands extends Component {
               </Col>
             </Row>
             <Row>
-              <Col className="brand-padding" md={2} lg={2} sm={6} xs={12}>
+              <Col className="brand-padding" md={md} lg={lg} sm={sm} xs={xs}>
                 <Link to="/products/crececrece">
                   <Image
-                    width={320}
+                    width={imageWidth}
                     className="brand-image"
                     responsive
                     src="images/logo-crececrece.svg"
                   />
                 </Link>
               </Col>
-              <Col md={2} lg={2} sm={6} xs={12}>
+              <Col className="brand-padding" md={md} lg={lg} sm={sm} xs={xs}>
                 <Link to="/products/weeddesign">
                   <Image
-                    width={320}
+                    width={imageWidth}
                     className="brand-image"
                     responsive
                     src="/images/logo-weeddesign.svg"
                   />
                 </Link>
               </Col>
-              <Col md={2} lg={2} sm={6} xs={12}>
+              <Col className="brand-padding" md={md} lg={lg} sm={sm} xs={xs}>
                 <Link to="/products/egrow">
                   <Image
-                    width={320}
+                    width={imageWidth}
                     className="brand-image"
                     responsive
                     src="/images/logo-egrow.svg"
                   />
                 </Link>
               </Col>
-              <Col md={2} lg={2} sm={6} xs={12}>
+              <Col className="brand-padding" md={md} lg={lg} sm={sm} xs={xs}>
                 <Link to="/products/abonodemar">
                   <Image
-                    width={320}
+                    width={imageWidth}
                     className="brand-image"
                     responsive
                     src="/images/logo-abonodemar.svg"
                   />
                 </Link>
               </Col>
-              <Col md={2} lg={2} sm={6} xs={12}>
+              <Col className="brand-padding" md={md} lg={lg} sm={sm} xs={xs}>
                 <Link to="/products/sembrandovida">
                   <Image
-                    width={320}
+                    width={imageWidth}
                     className="brand-image"
                     responsive
                     src="/images/logo-sembrandovida.svg"
                   />
                 </Link>
               </Col>
-              <Col md={2} lg={2} sm={6} xs={12}>
+              <Col className="brand-padding" md={md} lg={lg} sm={sm} xs={xs}>
                 <Link to="/products/biofertil">
                   <Image
-                    width={320}
+                    width={imageWidth}
                     className="brand-image"
                     responsive
                     src="/images/logo-biofertil.svg"
+                  />
+                </Link>
+              </Col>
+              <Col className="brand-padding" md={md} lg={lg} sm={sm} xs={xs}>
+                <Link to="/products/biofertil">
+                  <Image
+                    width={imageWidth}
+                    className="brand-image"
+                    responsive
+                    src="/images/logo-merlin.svg"
+                  />
+                </Link>
+              </Col>
+              <Col className="brand-padding" md={md} lg={lg} sm={sm} xs={xs}>
+                <Link to="/products/biofertil">
+                  <Image
+                    width={imageWidth}
+                    className="brand-image"
+                    responsive
+                    src="/images/logo-suelo-vivo.svg"
                   />
                 </Link>
               </Col>

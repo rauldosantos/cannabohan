@@ -32,25 +32,25 @@
       "products": [
         {
           "idProduct": "tierradiatomeas",
-          "nameProduct": "Tierra de Diatomeas",
+          "nameProduct": "Tierra de diatomeas",
           "shortDescription": "Algas microscópicas fosilizadas. Conocida también como Tierra Blanca",
-          "description": "o Diatomita, son algas microscópicas fosilizadas que se presentan como rocas siliceas sedimentarias de color blanco intenso. <br></br> Por lo que también se la conoce como la Tierra Blanca. <br></br> Cuando las algas mueren su esqueleto de sílice se deposita en el fondo del mar y con el paso del tiempo forma grandes depósitos de algas fosilizadas conocidas como tierra de Diatomeas, material por tanto inerte y no toxico. <br></br><br></br> Usos: <br></br> Son muchos y muy variados los usos y aplicaciones de la Tierra de Diatomeas, esto se debe y basa en sus propiedades físico-químicas, entre las que podemos destacar: <br></br> Fertilizante: <br></br> Ademas de regular la acidez y actuar como insecticida mecanico,aporta los microelementos necesarios para el adecuado crecimiento de las raices,tallo y hojas. Aporta:aluminio,hierro,calcio,manganeso,magnesio,boro,zinc,fosforo,potasio,hierro y ademas mejora la estructura del suelo y retencion de agua por su composicion silica. <br></br> Insecticida: <br></br> Sin toxicos es de rapida y alta efectividad contra: <br></br> *Pulgón <br></br> *Trips <br></br> *Cochinilla <br></br> *Araña roja <br></br> *Mosca blanca <br></br> *Caracoles y babosas <br></br> *Hormigas,Orugas,etc. <br></br> ",
-          "price": 200,
-          "urlPhoto": "images/fertilizante.jpg",
-          "type": "fertilizante"
-        },
-        {
-          "idProduct": "harinahueso",
-          "nameProduct": "Melaza de Caña",
-          "shortDescription": "En Jardineria Organica se usa como un buen fertilizante para agregar fósforo al suelo.",
-          "description": "En Jardineria Organica se usa como un buen fertilizante para agregar fósforo al suelo. <br></br> ¿Cómo se usa la harina de huesos para la floración? <br></br> La misma aporta Fosforo,Calcio,Magnesio,ETC. Es de absorción relativamente lenta, en general se agrega cuando armamos el sustrato o en su defecto enterrando a 3cm de profundidad y a unos 10cm del tallo de la planta una cucharada sopera de harina de hueso. El fósforo es esencial para que las plantas florezcan. El fósforo de harina de huesos es de facil asimilacion para las plantas. El uso de harina de huesos ayudará a que sus plantas con flores, como las rosas o bulbos, crezcan más grandes y den flores más abundantes. La harina de huesos liberará fósforo en el suelo por hasta cuatro meses.",
+          "description": "o Diatomita, son algas microscópicas fosilizadas que se presentan como rocas siliceas sedimentarias de color blanco intenso. Cuando las algas mueren su esqueleto de sílice se deposita en el fondo del mar y con el paso del tiempo forma grandes depósitos de algas fosilizadas conocidas como tierra de Diatomeas, material por tanto inerte y no toxico. Ademas de regular la acidez y actuar como insecticida mecanico,aporta los microelementos necesarios para el adecuado crecimiento de las raices,tallo y hojas. Aporta: aluminio, hierro, calcio, manganeso, magnesio, boro, zinc, fosforo, potasio, hierro y ademas mejora la estructura del suelo y retencion de agua por su composicion silica.   Insecticida:   Sin toxicos es de rapida y alta efectividad contra:   *Pulgón   *Trips   *Cochinilla   *Araña roja   *Mosca blanca   *Caracoles y babosas   *Hormigas,Orugas,etc.   ",
           "price": 200,
           "urlPhoto": "images/fertilizante.jpg",
           "type": "fertilizante"
         },
         {
           "idProduct": "melaza",
-          "nameProduct": "Harina de Hueso",
+          "nameProduct": "Melaza de caña",
+          "shortDescription": "En Jardineria Organica se usa como un buen fertilizante para agregar fósforo al suelo.",
+          "description": "En Jardineria Organica se usa como un buen fertilizante para agregar fósforo al suelo.   ¿Cómo se usa la harina de huesos para la floración?   La misma aporta Fosforo,Calcio,Magnesio,ETC. Es de absorción relativamente lenta, en general se agrega cuando armamos el sustrato o en su defecto enterrando a 3cm de profundidad y a unos 10cm del tallo de la planta una cucharada sopera de harina de hueso. El fósforo es esencial para que las plantas florezcan. El fósforo de harina de huesos es de facil asimilacion para las plantas. El uso de harina de huesos ayudará a que sus plantas con flores, como las rosas o bulbos, crezcan más grandes y den flores más abundantes. La harina de huesos liberará fósforo en el suelo por hasta cuatro meses.",
+          "price": 200,
+          "urlPhoto": "images/fertilizante.jpg",
+          "type": "fertilizante"
+        },
+        {
+          "idProduct": "harinahueso",
+          "nameProduct": "Harina de hueso",
           "shortDescription": "Funciona perfectamente en indoors o cultivos extensos en el exterior. ",
           "description": "Aumenta la estructura y capacidad del suelo. Estabiliza el Ph. Aumenta el contenido de micro y macronutrientes. Mejora la eficacia del suelo. No contiene Dioxido de Azufre(SO2). Funciona perfectamente en indoors o cultivos extensos en el exterior. Atrae microorganismos beneficiosos del ecosistema. Se agrega al ciclo de riego. Excelente potenciador de flores. Funciona perfecto en Vegetativo. Aumenta las defensas de la planta. Excelentes resultados! Es Ideal para huertas organicas y aceleracion de compostaje.",
           "price": 200,
@@ -108,12 +108,12 @@
     {
       "id": "abonodemar",
       "name": "Abono de Mar",
-      "description": "Diseños en madera",
-      "email": "egrow@gmail.com",
+      "description": "Abono de Mar",
+      "email": "abonodemar@gmail.com",
       "phone": "098123456",
       "products": [
         {
-          "idProduct": "prensa",
+          "idProduct": "Compost zarandeado",
           "nameProduct": "Prensa",
           "shortDescription": "Asa asdh ajsjd  ajs d",
           "description": "Prensa para extracción de resina",
